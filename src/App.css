@@ -1,74 +1,284 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(228, 227, 227);
+  font-family: "Poppins", sans-serif;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;
+  padding: 30px;
 }
-
-.product-card {
-  padding: 4%;
+.wrapper {
   flex: 1 12%;
-  border: 5px #00ff14;
+  padding: 10px;
+  background-color: white;
+  height: 360px;
+  width: 250px;
+  border: 10px solid rgb(228, 227, 227);
+
+  position: relative;
 }
 
-.product-info {
-  margin-top: auto;
+/* .photo {
+  height: 20vh;
+  width: 20vh;
+} */
+
+.photo {
+  height: 200px;
+  width: 200px;
+  padding-left: 30px;
+}
+
+.price {
+  line-height: normal;
+}
+
+.star-img {
+  height: 50px;
+  width: 50px;
+}
+
+.info {
+  padding-right: 170px;
+  line-height: 5px;
+}
+p {
+  padding-right: 1px;
+  color: rgb(163, 162, 162);
+}
+
+.price {
+  /* padding-left: 10px; */
+  padding-bottom: 5px;
+  padding-right: 160px;
+}
+
+.add-to-cart {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
 }
 
 .add-to-cart-btn {
-  background: #00ff14;
-  border: none;
-  padding: 15px 25px;
+  /* background-color: rgb(0, 68, 255); */
+  padding: 10px 25px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  transition-duration: 0.4s;
 }
 
-.photo {
-  height: 20vh;
-  width: 20vh;
-}
-
-.button {
-  background-color: #4caf50;
-  border: none;
+.add-to-cart-btn:hover {
+  background-color: #4caf50; /* Green */
   color: white;
-  padding: 15px 25px;
-  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: #4caf50;
+  color: white;
+}
+
+ h2 {
+  color: white;
   text-decoration: none;
+  list-style: none;
+}
+
+.nav-links li {
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  padding: 0px 20px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 10px 25px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #26c52c; /* Green */
+  color: white;
+}
+
+li :hover {
+  color: #066609;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Indie+Flower&family=Playfair+Display:wght@600&family=Righteous&family=Rowdies&display=swap);
+
+* {
+  transition: all 0.3s ease;
+}
+
+.wrapper-welcome {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.m:hover,
+.e:hover,
+.g:hover,
+.a:hover,
+.n:hover,
+.ex:hover {
+  padding: 0 20px;
+}
+
+.m {
+  color: red;
+  font-family: "Righteous", cursive;
+}
+.e {
+  color: yellow;
+  font-family: "Indie Flower", cursive;
+}
+
+.e:hover {
+  color: yellow;
+}
+
+.g {
+  color: limegreen;
+  font-family: "Arvo", serif;
+}
+
+.a {
+  color: blue;
+  font-family: "Playfair Display", serif;
+}
+
+.n {
+  color: orchid;
+  font-family: "Rowdies", cursive;
+}
+
+.m:hover {
+  color: orchid;
+  background-color: red;
+  font-size: 14rem;
   cursor: pointer;
 }
 
-
-form {
-  background:#ffffff;
-  min-height:200px;
-  padding:25px;
+.e:hover {
+  color: blue;
+  background-color: yellow;
+  cursor: pointer;
+  font-size: 14rem;
 }
 
-
-
-label{
-    display:block;
-    color:#888888;
-    font-size: 14px;
-    margin-bottom:5px;
+.g:hover {
+  color: lightskyblue;
+  background-color: limegreen;
+  cursor: pointer;
+  font-size: 14rem;
 }
-input{
-    border:1px solid #ccc;
-    width: 348px;
-    padding: 10px;
-    font-size: 15px;
-    margin-bottom: 15px;
+
+.a:hover {
+  color: yellow;
+  background-color: blue;
+  cursor: pointer;
+  font-size: 14rem;
 }
-input[type=submit]{
-    border:none;
-    width:350px; 
-    background: #ff1ddf;
-    color: #fff;
-    font-size:13px;
-    font-weight:bold;
-    padding-top:15px;
-    padding-bottom: 15px;
-    
-    
-    
+
+.n:hover {
+  color: red;
+  background-color: orchid;
+  font-size: 14rem;
+  cursor: pointer;
+}
+
+.ex {
+  color: red;
+}
+
+.ex:hover {
+  background-color: red;
+  color: orchid;
+  font-size: 14rem;
+  cursor: pointer;
+}
+
+/* //Forms start */
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+  max-width: 400px;
+  min-height: 200px;
+  padding-left: 100px;
+  margin-top: 50px;
+  margin-left: 450px;
+  /* margin: 0 auto 0 auto; */
+}
+
+.login-form {
+  background: #ffffff;
+  min-height: 200px;
+  padding: 25px;
+}
+
+/* 
+h3{
+ padding-bottom:10px;
+} */
+
+label {
+  display: block;
+  color: #888888;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input {
+  border: 1px solid #ccc;
+  width: 348px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+input[type="submit"] {
+  border: none;
+  width: 350px;
+  background: #ff1ddf;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.login-btn {
+  padding: 10px 25px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+body login.js{
+  background-color:#F559DA;
+  font-family:Arial;
 }
